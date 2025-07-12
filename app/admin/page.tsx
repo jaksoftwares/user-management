@@ -39,6 +39,7 @@ import {
 import { Label } from '@/components/ui/label';
 
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
+import { supabase } from '@/lib/supabase';
 
 export default function AdminPage() {
   const [users, setUsers] = useState<UserProfile[]>([]);
